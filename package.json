@@ -11,6 +11,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@nutui/nutui": "^3.1.16",
     "@vitejs/plugin-vue-jsx": "^1.3.9",
     "vue": "^3.2.25"
   },
@@ -19,14 +20,17 @@
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
     "@vitejs/plugin-vue": "^2.3.0",
+    "consola": "^2.15.3",
     "eslint": "^8.12.0",
     "eslint-config-standard": "^17.0.0-1",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-n": "14",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^8.5.0",
+    "free-core": "^1.1.2-dev",
     "husky": ">=7",
     "lint-staged": ">=10",
+    "naive-ui": "^2.27.0",
     "postcss": "^8.4.12",
     "postcss-html": "^1.3.0",
     "sass": "^1.49.11",
@@ -36,7 +40,9 @@
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-order": "^5.0.0",
     "typescript": "^4.5.4",
+    "vfonts": "^0.0.3",
     "vite": "^2.9.0",
+    "vite-plugin-style-import": "^2.0.0",
     "vue-tsc": "^0.29.8"
   },
   "lint-staged": {
