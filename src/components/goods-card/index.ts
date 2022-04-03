@@ -4,7 +4,7 @@ import Thumb from './assets/thumb.png';
 import { markRaw } from 'vue';
 
 const NutuiGoodsCardWidget: Widget = {
-  name: '电梯导航',
+  name: '商品卡片',
   key: 'goods-card',
   thumb: Thumb,
   component: markRaw(GoodsCard),
