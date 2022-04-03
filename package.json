@@ -27,7 +27,7 @@
     "eslint-plugin-n": "14",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^8.5.0",
-    "free-core": "^1.1.2-dev",
+    "free-core": "^1.1.8-x.dev",
     "husky": ">=7",
     "lint-staged": ">=10",
     "naive-ui": "^2.27.0",
