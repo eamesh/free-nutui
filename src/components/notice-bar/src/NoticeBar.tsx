@@ -1,11 +1,21 @@
-import { FreeActionTitle } from 'free-core';
+import { FreeActionTitle, widgetDataProps } from 'free-core';
 import { NText } from 'naive-ui';
 import { defineComponent, ref } from 'vue';
 
 import './style.scss';
 
+export interface NutuiNoticeBarProps {
+  keyword: string;
+}
+
+const nutuiNoticeBarProps = widgetDataProps<NutuiNoticeBarProps>({
+  keyword: ''
+});
+
 export default defineComponent({
-  name: 'Search',
+  name: 'NoticeBar',
+
+  props: nutuiNoticeBarProps,
 
   setup () {
     const model = ref({

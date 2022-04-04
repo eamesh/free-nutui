@@ -1,11 +1,21 @@
-import { FreeActionTitle } from 'free-core';
+import { FreeActionTitle, widgetDataProps } from 'free-core';
 import { NText } from 'naive-ui';
 import { defineComponent, ref } from 'vue';
 
 import './style.scss';
 
+export interface NutuiVideoPlayerProps {
+  keyword: string;
+}
+
+const nutuiVideoPlayerProps = widgetDataProps<NutuiVideoPlayerProps>({
+  keyword: ''
+});
+
 export default defineComponent({
   name: 'Search',
+
+  props: nutuiVideoPlayerProps,
 
   setup () {
     const model = ref({

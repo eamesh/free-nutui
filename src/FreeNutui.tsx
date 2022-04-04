@@ -59,6 +59,21 @@ export default defineComponent({
         positiveText: '预览',
         onPositiveClick: () => {
           console.info('%c=====> getPageData:', 'color: #43bb88;font-size: 12px;font-weight: bold;text-decoration: underline;', freeRef.value.getPageData());
+          const datas = freeRef.value.getPageData() as any;
+          const page = Object.values(datas.page).map((item: any) => {
+            return {
+              key: item.widgetKey,
+              data: item.model
+            };
+          });
+          const pageData: any = {
+            page
+          };
+          Object.values(datas.core).forEach((item: any) => {
+            pageData[item.widgetKey] = item.model || {};
+          });
+
+          console.log(JSON.stringify(pageData));
         }
       });
       console.log(freeRef.value);

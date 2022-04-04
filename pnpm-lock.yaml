@@ -14,7 +14,7 @@ specifiers:
   eslint-plugin-n: '14'
   eslint-plugin-promise: ^6.0.0
   eslint-plugin-vue: ^8.5.0
-  free-core: ^1.1.8-6.dev
+  free-core: ^1.1.8-9.dev
   husky: '>=7'
   lint-staged: '>=10'
   naive-ui: ^2.27.0
@@ -50,7 +50,7 @@ devDependencies:
   eslint-plugin-n: 14.0.0_eslint@8.12.0
   eslint-plugin-promise: 6.0.0_eslint@8.12.0
   eslint-plugin-vue: 8.5.0_eslint@8.12.0
-  free-core: 1.1.8-6.dev
+  free-core: 1.1.8-9.dev
   husky: 7.0.4
   lint-staged: 12.3.7
   naive-ui: 2.27.0_vue@3.2.31
@@ -7386,8 +7386,8 @@ packages:
       map-cache: 0.2.2
     dev: false
 
-  /free-core/1.1.8-6.dev:
-    resolution: {integrity: sha512-FKvLe3RUOmxGJb2jWiavmVfCN7NRmqnM0lR4rG3G/f1Inv2yFkGCVYe//185pHJboVK4bitM3no1WODNlI9ekQ==}
+  /free-core/1.1.8-9.dev:
+    resolution: {integrity: sha512-+5P88+r8LRTfA/dz56FTJoDmEqQ9flDCxZVLDkC1JLoadw74XZca1tn86uh5LMta0wPtVjVFQqixZ0vVZ5TQaA==}
     dependencies:
       '@vitejs/plugin-vue-jsx': 1.3.9
       lodash-es: 4.17.21

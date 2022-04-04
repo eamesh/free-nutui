@@ -1,13 +1,26 @@
-import { FreeActionTitle } from 'free-core';
+import { FreeActionTitle, widgetDataProps } from 'free-core';
 import { NText } from 'naive-ui';
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 
 import './style.scss';
+
+export interface NutuiImageNavProps {
+  title: string;
+}
+
+const nutuiImageNavProps = widgetDataProps<NutuiImageNavProps>({
+  title: ''
+});
 
 export default defineComponent({
   name: 'ImageNav',
 
+  props: nutuiImageNavProps,
+
   setup () {
+    const model = ref({
+    });
+
     function renderAction () {
       return (
         <>
@@ -20,6 +33,7 @@ export default defineComponent({
     }
 
     return {
+      model,
       renderAction
     };
   },

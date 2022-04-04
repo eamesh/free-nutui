@@ -1,11 +1,21 @@
-import { FreeActionTitle } from 'free-core';
+import { FreeActionTitle, widgetDataProps } from 'free-core';
 import { NText } from 'naive-ui';
 import { defineComponent, ref } from 'vue';
 
 import './style.scss';
 
+export interface NutuiNavigationProps {
+  keyword: string;
+}
+
+const nutuiNavigationProps = widgetDataProps<NutuiNavigationProps>({
+  keyword: ''
+});
+
 export default defineComponent({
-  name: 'Search',
+  name: 'Navigation',
+
+  props: nutuiNavigationProps,
 
   setup () {
     const model = ref({

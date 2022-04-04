@@ -5,7 +5,7 @@ import { markRaw } from 'vue';
 
 const NutuiNoticeBarWidget: Widget<any> = {
   name: '公告栏',
-  key: 'search',
+  key: 'notice-bar',
   thumb: Thumb,
   component: markRaw(NoticeBar),
   allowCount: 10

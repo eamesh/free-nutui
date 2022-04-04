@@ -1,14 +1,26 @@
-import { FreeActionTitle } from 'free-core';
+import { FreeActionTitle, widgetDataProps } from 'free-core';
 import { NText } from 'naive-ui';
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 import Ad from '../assets/ad.png';
 
 import './style.scss';
 
+export interface NutuiImageAdProps {
+  title: string;
+}
+
+const nutuiImageAdProps = widgetDataProps<NutuiImageAdProps>({
+  title: '测试'
+});
+
 export default defineComponent({
   name: 'ImageAd',
 
+  props: nutuiImageAdProps,
+
   setup () {
+    const model = ref({
+    });
     function renderAction () {
       return (
         <>
@@ -21,6 +33,7 @@ export default defineComponent({
     }
 
     return {
+      model,
       renderAction
     };
   },
