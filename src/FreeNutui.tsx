@@ -1,4 +1,4 @@
-import { defineComponent, ref } from 'vue';
+import { defineComponent, onMounted, ref } from 'vue';
 import { MenuOption, NButton, NLayout, NLayoutHeader, NLayoutSider, NMenu, NSpace, useDialog } from 'naive-ui';
 import { Free, FreeLayout, FreePageWidget, FreeTitleTextWidget, FreeWhiteHeightWidget, FreeWidgetsManageWidget } from 'free-core';
 import { AsideGroup, PageDataSchemas } from 'free-core/lib/types/core/src/interface';
@@ -230,6 +230,10 @@ export default defineComponent({
       console.log(freeRef.value);
       freeRef.value.setPageData(data);
     }
+
+    onMounted(() => {
+      handleSetDefaultPageData();
+    });
 
     return {
       menus,
