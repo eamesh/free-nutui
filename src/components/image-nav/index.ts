@@ -3,7 +3,7 @@ import ImageNav from './src/ImageNav';
 import Thumb from './assets/thumb.png';
 import { markRaw } from 'vue';
 
-const NutuiImageNavWidget: Widget = {
+const NutuiImageNavWidget: Widget<any> = {
   name: '图文导航',
   key: 'image-nav',
   thumb: Thumb,

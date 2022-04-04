@@ -3,7 +3,7 @@ import VideoPlayer from './src/VideoPlayer';
 import Thumb from './assets/thumb.png';
 import { markRaw } from 'vue';
 
-const NutuiVideoPlayerWidget: Widget = {
+const NutuiVideoPlayerWidget: Widget<any> = {
   name: '视频播放器',
   key: 'video-player',
   thumb: Thumb,

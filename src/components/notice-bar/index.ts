@@ -3,7 +3,7 @@ import NoticeBar from './src/NoticeBar';
 import Thumb from './assets/thumb.png';
 import { markRaw } from 'vue';
 
-const NutuiNoticeBarWidget: Widget = {
+const NutuiNoticeBarWidget: Widget<any> = {
   name: '公告栏',
   key: 'search',
   thumb: Thumb,

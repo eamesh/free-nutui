@@ -3,7 +3,7 @@ import Search from './src/Search';
 import Thumb from './assets/thumb.png';
 import { markRaw } from 'vue';
 
-const NutuiSearchWidget: Widget = {
+const NutuiSearchWidget: Widget<any> = {
   name: '搜索',
   key: 'search',
   thumb: Thumb,

@@ -3,7 +3,7 @@ import ImageAd from './src/ImageAd';
 import Thumb from './assets/thumb.png';
 import { markRaw } from 'vue';
 
-const NutuiImageAdWidget: Widget = {
+const NutuiImageAdWidget: Widget<any> = {
   name: '图片广告',
   key: 'image-ad',
   thumb: Thumb,

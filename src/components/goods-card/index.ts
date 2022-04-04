@@ -3,7 +3,7 @@ import GoodsCard from './src/GoodsCard';
 import Thumb from './assets/thumb.png';
 import { markRaw } from 'vue';
 
-const NutuiGoodsCardWidget: Widget = {
+const NutuiGoodsCardWidget: Widget<any> = {
   name: '商品卡片',
   key: 'goods-card',
   thumb: Thumb,

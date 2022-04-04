@@ -3,7 +3,7 @@ import Navigation from './src/Navigation';
 import Thumb from './assets/thumb.png';
 import { markRaw } from 'vue';
 
-const NutuiNavigationWidget: Widget = {
+const NutuiNavigationWidget: Widget<any> = {
   name: '电梯导航',
   key: 'navigation',
   thumb: Thumb,
