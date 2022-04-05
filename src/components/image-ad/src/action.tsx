@@ -92,7 +92,7 @@ export const useAction = () => {
               </NThing>
             </div>
 
-            <NSpace vertical class='carousel-container'>
+            <NSpace vertical class='secondary-container carousel-container'>
               <NButton type='primary' class='carousel-add' ghost>{{
                 icon: () => (
                   <NIcon>
@@ -103,7 +103,7 @@ export const useAction = () => {
               }}</NButton>
             </NSpace>
 
-            <div class='free-action-render'>
+            <div class='free-action-form free-action-render'>
               <NDivider />
               <NFormItem label='图片样式' labelPlacement='left'>
                 <NSpace align='center' justify='space-between' class='carousel-image-type' style={{ width: '100%' }}>
