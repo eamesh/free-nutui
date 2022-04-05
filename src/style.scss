@@ -5,3 +5,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 12px;
 }
+
+.free-action-render {
+  padding: 16px;
+
+  .action-item-label {
+    font-size: 14px;
+  }
+}

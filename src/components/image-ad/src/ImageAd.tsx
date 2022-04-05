@@ -1,7 +1,7 @@
-import { FreeActionTitle, widgetDataProps } from 'free-core';
-import { NText } from 'naive-ui';
-import { defineComponent, ref } from 'vue';
+import { widgetDataProps } from 'free-core';
+import { defineComponent } from 'vue';
 import Ad from '../assets/ad.png';
+import { useAction } from './action';
 
 import './style.scss';
 
@@ -19,18 +19,10 @@ export default defineComponent({
   props: nutuiImageAdProps,
 
   setup () {
-    const model = ref({
-    });
-    function renderAction () {
-      return (
-        <>
-          <FreeActionTitle title='图片广告' />
-          <div class='free-action-form'>
-            <NText>功能待完善</NText>
-          </div>
-        </>
-      );
-    }
+    const {
+      model,
+      renderAction
+    } = useAction();
 
     return {
       model,

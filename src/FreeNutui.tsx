@@ -247,7 +247,7 @@ export default defineComponent({
     }
 
     onMounted(() => {
-      handleSetDefaultPageData();
+      // handleSetDefaultPageData();
     });
 
     return {
