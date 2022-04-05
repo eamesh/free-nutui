@@ -17,7 +17,7 @@ export const useAction = (props: any) => {
   function handleAddNav () {
     modelUnref.navs.push({
       title: '',
-      thumb: '',
+      thumb: 'dongdong',
       redirect: {}
     });
   }
