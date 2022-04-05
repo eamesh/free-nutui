@@ -60,7 +60,7 @@ export default defineComponent({
         onPositiveClick: () => {
           console.info('%c=====> getPageData:', 'color: #43bb88;font-size: 12px;font-weight: bold;text-decoration: underline;', freeRef.value.getPageData());
           const datas = freeRef.value.getPageData() as any;
-          const page = Object.values(datas.page).map((item: any) => {
+          const page = datas.page.map((item: any) => {
             return {
               key: item.widgetKey,
               data: item.model
