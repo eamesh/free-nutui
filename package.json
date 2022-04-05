@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nutui/nutui": "^3.1.16",
+    "@vicons/fluent": "^0.12.0",
     "@vitejs/plugin-vue-jsx": "^1.3.9",
     "vue": "^3.2.25"
   },
