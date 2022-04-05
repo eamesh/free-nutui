@@ -42,7 +42,7 @@ export default defineComponent({
   render () {
     return (
       <div class='navigation'>
-        <nut-tabs v-model={this.model.tableValue}>
+        <nut-tabs v-model={this.model.tableValue} type="smile">
           <nut-tabpane title="导航一">
           </nut-tabpane>
           <nut-tabpane title="导航二">
