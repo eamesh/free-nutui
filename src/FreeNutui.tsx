@@ -165,7 +165,7 @@ export default defineComponent({
             }
           },
           {
-            id: 8,
+            id: 9,
             ...NutuiVideoPlayerWidget,
             data: {}
           },
