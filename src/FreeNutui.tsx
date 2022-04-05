@@ -104,8 +104,7 @@ export default defineComponent({
           },
           {
             id: 5,
-            ...NutuiImageNavWidget,
-            data: {}
+            ...NutuiImageNavWidget
           },
           {
             id: 6,
@@ -247,7 +246,7 @@ export default defineComponent({
     }
 
     onMounted(() => {
-      // handleSetDefaultPageData();
+      handleSetDefaultPageData();
     });
 
     return {
