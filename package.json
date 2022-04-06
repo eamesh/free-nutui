@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "build:gh-pages": "vue-tsc --noEmit && vite build --base=./",
     "preview": "vite preview",
     "lint:eslint": "eslint \"src/**/*.{vue,js,ts,tsx}\" --fix",
     "lint:stylelint": "stylelint --fix \"**/*.{vue,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
