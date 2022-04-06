@@ -49,6 +49,7 @@ jobs:
         git commit -m "deploy to Github pages"
         git push origin gh-pages -f
         echo 🤘 deploy gh-pages complete.
+
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@main
       env:
