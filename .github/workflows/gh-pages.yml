@@ -13,7 +13,11 @@ jobs:
   build:
     name: Build and deploy gh-pages
     env:
-      MY_SECRET: ${{secrets.gh_pages}}
+      MY_SECRET: ${{secrets.GH_PAGES}}
+      SERVER_SSH_KEY: ${{secrets.SERVER_SSH_KEY}}
+      REMOTE_HOST: ${{secrets.REMOTE_HOST}}
+      REMOTE_USER: ${{ secrets.REMOTE_USER }}
+      REMOTE_TARGET: ${{ secrets.REMOTE_TARGET }}
       USER_NAME: eamesh
       USER_EMAIL: easeava@gmail.com
       BUILD_PATH: ./dist
@@ -49,3 +53,13 @@ jobs:
         git commit -m "deploy to Github pages"
         git push origin gh-pages -f
         echo 🤘 deploy gh-pages complete.
+    - name: Deploy to Server
+      uses: easingthemes/ssh-deploy@main
+      env:
+        SSH_PRIVATE_KEY: $SERVER_SSH_KEY
+        ARGS: "-rltgoDzvO --delete"
+        SOURCE: "dist/"
+        REMOTE_HOST: $REMOTE_HOST
+        REMOTE_USER: $REMOTE_USER
+        TARGET: $REMOTE_TARGET
+        EXCLUDE: "/dist/, /node_modules/"
