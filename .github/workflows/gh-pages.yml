@@ -13,9 +13,9 @@ jobs:
   build:
     name: Build and deploy gh-pages
     env:
-      MY_SECRET: ${{secrets.GH_PAGES}}
-      SERVER_SSH_KEY: ${{secrets.SERVER_SSH_KEY}}
-      REMOTE_HOST: ${{secrets.REMOTE_HOST}}
+      MY_SECRET: ${{ secrets.GH_PAGES }}
+      SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
+      REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
       REMOTE_USER: ${{ secrets.REMOTE_USER }}
       REMOTE_TARGET: ${{ secrets.REMOTE_TARGET }}
       USER_NAME: eamesh
