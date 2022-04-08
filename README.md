@@ -1,4 +1,4 @@
-## Nutui跨端微页面编辑
+## Free-core Naive-ui Nutui跨端微页面编辑
 
 基于[free-core](https://github.com/eamesh/free-core)、[naive-ui](https://github.com/TuSimple/naive-ui)开发的仿有赞[Nutui](https://github.com/jdf2e/nutui)微页面编辑  
 实现页面自由拖拽编辑，及数据展现  
@@ -7,6 +7,7 @@
 ## Preview
 
 [预览](https://nutui.emesh.cloud)
+[Emesh 商城](https://preview.v1.emesh.cc)
 
 ## Feature
 
