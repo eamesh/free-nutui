@@ -15,7 +15,7 @@ specifiers:
   eslint-plugin-n: '14'
   eslint-plugin-promise: ^6.0.0
   eslint-plugin-vue: ^8.5.0
-  free-core: ^1.1.8-16.dev
+  free-core: ^1.1.8-19.dev
   husky: '>=7'
   lint-staged: '>=10'
   naive-ui: ^2.27.0
@@ -52,7 +52,7 @@ devDependencies:
   eslint-plugin-n: 14.0.0_eslint@8.12.0
   eslint-plugin-promise: 6.0.0_eslint@8.12.0
   eslint-plugin-vue: 8.5.0_eslint@8.12.0
-  free-core: 1.1.8-16.dev
+  free-core: 1.1.8-19.dev
   husky: 7.0.4
   lint-staged: 12.3.7
   naive-ui: 2.27.0_vue@3.2.31
@@ -7392,8 +7392,8 @@ packages:
       map-cache: 0.2.2
     dev: false
 
-  /free-core/1.1.8-16.dev:
-    resolution: {integrity: sha512-lIdV/flQ6oBT8SRkn5TFsU0vZzhjItnfzGHN1pf7k22NAKDCFPyQCoLsICjf7dKQ0wcv/mq/K5Cc1NSPfoiHww==}
+  /free-core/1.1.8-19.dev:
+    resolution: {integrity: sha512-dd5Ns0GrSIf6FOAOOe/ApRYzLH3mxm8O9ZCcL7y59C+F/omMoOyxwe0Eo92Xr162JRtREnBgQGETa4LIorkrqA==}
     dependencies:
       '@vitejs/plugin-vue-jsx': 1.3.9
       lodash-es: 4.17.21
@@ -7845,6 +7845,7 @@ packages:
 
   /graceful-fs/4.2.10:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
+    dev: false
 
   /graceful-fs/4.2.9:
     resolution: {integrity: sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==}
@@ -9180,7 +9181,7 @@ packages:
   /jsonfile/4.0.0:
     resolution: {integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=}
     optionalDependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.9
     dev: false
 
   /jsonfile/6.1.0:
@@ -9188,7 +9189,7 @@ packages:
     dependencies:
       universalify: 2.0.0
     optionalDependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.9
     dev: true
 
   /jsonp-retry/1.0.3:
