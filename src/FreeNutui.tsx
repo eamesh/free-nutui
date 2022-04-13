@@ -10,6 +10,8 @@ import NutuiVideoPlayerWidget from './components/video-player';
 import NutuiNavigationWidget from './components/navigation';
 import NutuiGoodsCardWidget from './components/goods-card';
 
+import 'free-core/lib/style.css';
+
 const asideGroups: AsideGroup[] = [
   {
     title: '基础组件',
